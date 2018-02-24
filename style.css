@@ -7,14 +7,20 @@
 	background-color: lightgrey;
 	width: 100%;
 	min-height: 300px;
-	display:grid;
-	grid-template-rows: 100px auto 50px;
+	display: grid;
+	grid-template-rows: 125px auto 50px;
 }
-header{
-	grid-row:1/2;
-	display:flex;
+header {
+	grid-row: 1/2;
+	display: flex;
+	justify-content: center flex-end;
+	align-content: flex-end;
+}
+.heading {
+	display: flex;
+	background-color: orange;
 	justify-content: center;
-	align-content: center;
+
 }
 main{
 	grid-row: 2/3;
@@ -25,45 +31,59 @@ main{
 }
 .about-me{
 	grid-row: 1/2;
-text-align: center;
-background-color: darkslategrey;
+	text-align: center;
+	background-color: coral;
 }
-.biography{
+#biography{
 	background-color: navajowhite;
 	grid-row: 1/2;
 	text-align: center;
 }
-.professional-photo{
-	display:flex;
-	flex-direction: column;
-	align-items: center;
+#professional-photo{
+	grid-row: 1/2;
 }
 .my-projects{
 	grid-row:3/4;
 	background-color: dodgerblue;
 	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
+	text-align: center;
+
 }
 .project{
 	display:flex;
 	background-color: yellow;
 	flex-direction: column;
-
 	justify-content: center;
 	align-items: center;
 }
-ul {
+#menu ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: auto;
     background-color: #f1f1f1;
+    align-content: right;
+    text-align: center;
 }
-
-li  {
-    display: block;
+#menu li a  {
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
+    border-right: 1px solid #bbb;
+
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+#menu li a: hover{
+	background-color: red;
+}
+
+footer{
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
