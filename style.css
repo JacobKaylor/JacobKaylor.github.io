@@ -26,7 +26,7 @@ main{
 .about-me{
 	grid-row: 1/2;
 text-align: center;
-background-color: pink;
+background-color: darkslategrey;
 }
 .biography{
 	background-color: navajowhite;
@@ -38,19 +38,32 @@ background-color: pink;
 	flex-direction: column;
 	align-items: center;
 }
-.projects{
+.my-projects{
 	grid-row:3/4;
 	background-color: dodgerblue;
-	display: flex;
-
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .project{
+	display:flex;
+	background-color: yellow;
+	flex-direction: column;
 
 	justify-content: center;
 	align-items: center;
 }
-footer{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: #f1f1f1;
+}
+
+li  {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
