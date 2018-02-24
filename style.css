@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+	background-color: lightgrey;
+	width: 100%;
+	min-height: 300px;
+	display:grid;
+	grid-template-rows: 100px auto 50px;
+}
+header{
+	grid-row:1/2;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+main{
+	grid-row: 2/3;
+	background-color: pink;
+	display:grid;
+	grid-template-rows: 1fr auto;
+
+}
+.about-me{
+	grid-row: 1/2;
+text-align: center;
+background-color: pink;
+}
+.biography{
+	background-color: navajowhite;
+	grid-row: 1/2;
+	text-align: center;
+}
+.professional-photo{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.projects{
+	grid-row:3/4;
+	background-color: dodgerblue;
+	display: flex;
+
+}
+.project{
+
+	justify-content: center;
+	align-items: center;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
