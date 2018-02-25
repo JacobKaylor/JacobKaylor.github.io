@@ -18,9 +18,8 @@ header {
 	align-content: center;
 }
 .heading {
-	display:grid;
 	display: flex;
-	background-color: orange;
+	
 	justify-content: center;
 }
 main{
@@ -36,7 +35,7 @@ main{
 	flex-direction: column;
 }
 #biography{
-	background-color: navajowhite;
+	
 	grid-row: 1/2;
 	text-align: center;
 }
@@ -47,13 +46,13 @@ main{
 }
 .my-projects{
 	grid-row:2/3;
-	background-color: dodgerblue;
+
 	display:flex;
 	text-align: center;
 }
 .project{
 	display:flex;
-	background-color: yellow;
+
 	flex-direction: column;
 	align-items: center;
 }
@@ -84,4 +83,5 @@ footer{
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	background-color: dodgerblue;
 }
