@@ -8,7 +8,7 @@
 	width: 100%;
 	min-height: 300px;
 	display: grid;
-	grid-template-rows: 35px auto 50px;
+	grid-template-rows: 38px auto 50px;
 
 }
 header {
@@ -19,8 +19,8 @@ header {
 }
 .heading {
 	display: flex;
-	
 	justify-content: center;
+	font-family: Arial;
 }
 main{
 	grid-row: 2/3;
@@ -84,4 +84,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	background-color: dodgerblue;
+}
+.jacob-photo {
+	border-radius:50%;
 }
