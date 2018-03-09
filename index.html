@@ -4,7 +4,7 @@
 	<title>Jacob Kaylor's Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 	<link rel="stylesheet" type="text/css" href="src/css/portfolio.css">
-	<link rel="stylesheet" type="text/javascript" href="src/js/app.js">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 
 </head>
@@ -12,13 +12,16 @@
 	<div id = 'container'>
 		<header>
 			<div class = 'heading'><h1>Jacob Kaylor</h1></div>
-				<nav id = "menu">
-					<ul>
-    					<li><a href="#biography">Biography</a></li>
-    					<li><a href="#contact-info">Contact Info</a></li>
-   						<li><a href="#skills">Skills</a></li>
- 					</ul>
-				</nav>
+			<div class="dropdown">
+				<button onclick="myFunction()" class = "dropbtn"><i class="fas fa-bars fa - 6x"></i></button>
+				<div id = "myDropdown" class = "dropdown-content">
+					
+    					<a href="#biography">Biography</a>
+    					<a href="#contact-info">Contact Info</a>
+   						<a href="#skills">Skills</a>
+ 					
+				</div>
+			</div>
 		</header>	
 		<main>
 
@@ -27,10 +30,21 @@
 					<img class = 'jacob-photo' src="jacob-final.jpg" style="height: 400px; width: 25%;display: block;">
 				</section>
 			<div class = 'heading'><h2>About Me</h2></div>
+
+
 	
 					<section id = 'biography'>
-					<h3>Biography</h3>
-						<p>I am currently a software development apprentice at We Can Code IT, which is a full stack development program</p>
+					<button id="myBtn"><h3>Biography</h3></button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>I am currently a software development apprentice at We Can Code IT, which is a full stack development program</p>
+  </div>
+
+	</div>
+						
 				</section>
 
 				<section id = 'contact-info'>
@@ -59,24 +73,33 @@
 						<header><a href = "https://github.com/JacobKaylor/reviews"><h3>Reviews</h3></a></header>
 					
 						<img class = 'photo' src="screenshots/Reviews.png" style="height: 375px; width: 90%;display: block;">
-					
-						<p>Java ~ HTML ~ Spring ~ Object Oriented Programming ~ Test Driven Development</p>
+						
+					<button class = "btn" onclick=show()" >Skills Used</button>
+					<div id = "expand">
+						Java ~ HTML ~ Spring ~ Object Oriented Programming ~ Test Driven Development
+					</div>
 				</article>
 				<article class = 'project'>
 					
 						<header><a href = "https://github.com/JacobKaylor/virtual-pets-amok"><h3>Virtual Pets Amok</h3></a></header>
 					
 						<img class = 'photo' src="screenshots/Virtual-pets-amok.png" style="height: 375px; width: 90%;display: block;">
-					
-						<p>Java ~ Object Oriented Programming ~ Test Driven Development</p>
+						
+					<button class = "btn" onclick=show()>Skills Used</button>
+					<div id = "expand">
+						Java ~ Object Oriented Programming ~ Test Driven Development
+					</div>
 				</article>
 				<article class = 'project'>
 					
 						<header><a href = "https://github.com/JacobKaylor/virtual-pet-shelter"><h3>Virtual Pet Shelter</h3></a></header>
 					
 						<img class = 'photo' src="screenshots/Virtual-pet-shelter.png" style="height: 375px; width: 90%;display: block;">
-										
-						<p>Java ~ Object Oriented Programming ~ Test Driven Development</p>
+						
+					<button class = "btn" onclick=show()>Skills Used</button>
+					<div id = "expand">					
+						Java ~ Object Oriented Programming ~ Test Driven Development
+					</div>
 					</article>
 				</div>
 			</div>
@@ -86,6 +109,6 @@
 			<p>&copy; Thanks for visiting my professional website!</p>
 		</footer>
 	</div>
-
+<script src="./src/js/app.js"></script>
 </body>
 </html>
