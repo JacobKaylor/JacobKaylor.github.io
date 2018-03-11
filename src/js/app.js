@@ -19,3 +19,19 @@ if(document.getElementById('expand').style.display == 'none'){
   document.getElementById('expand').style.display = 'none';
 }
 }
+function show1()
+{
+if(document.getElementById('expand1').style.display == 'none'){
+  document.getElementById('expand1').style.display = 'block';
+}else{
+  document.getElementById('expand1').style.display = 'none';
+}
+}
+function show2()
+{
+if(document.getElementById('expand2').style.display == 'none'){
+  document.getElementById('expand2').style.display = 'block';
+}else{
+  document.getElementById('expand2').style.display = 'none';
+}
+}
