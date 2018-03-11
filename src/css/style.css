@@ -38,11 +38,11 @@ main{
 	flex-direction: column;
 }
 #biography{
-	
+
 	grid-row: 1/2;
 	text-align: center;
 }
-#professional-photo{
+.photos {
 	grid-row: 1/2;
 	display: flex;
 	justify-content: center;
@@ -130,7 +130,9 @@ h3 {
     display: block;
 }
 .dropdown-content a:hover {background-color: #ddd}
-.show {display:block;}
+.show {
+	display:block;
+}
 .modal {
     display: none; 
     position: fixed; 
@@ -163,10 +165,10 @@ h3 {
     cursor: pointer;
 }
 #myBtn {
-    background-color: brown;
-    color: gold;
+    background-color: purple;
+    color: black;
     padding: 10px;
-    border:none;
+	border: 1px solid #888;
     font-family: Baskerville;
 }
 .myBtn:hover {
@@ -178,4 +180,10 @@ h3 {
 }
 #btn{
 	background-color: pink;
+}
+.photos {
+    display: flex;
+}
+.photos button {
+    align-self: center;
 }
