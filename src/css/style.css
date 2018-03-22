@@ -46,6 +46,7 @@ main{
 	grid-row: 1/2;
 	display: flex;
 	justify-content: center;
+    align-self: center;
 }
 .my-projects{
 	grid-row:2/3;
@@ -181,9 +182,5 @@ h3 {
 #btn{
 	background-color: pink;
 }
-.photos {
-    display: flex;
-}
-.photos button {
-    align-self: center;
-}
+
+
